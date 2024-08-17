@@ -1,6 +1,6 @@
-NAME="exp-1"
+NAME="exp-2"
 INPUT=.input
 cat example.json > .input
-ID=$(name=$NAME jq '.experiments[] | select(.tags.name == env.name) | .id' < $INPUT)
-echo $ID
+ID=$(name=$NAME jq -r '.experiments[] | select(.tags.name == env.name) | .id' $INPUT)
+echo "Found ID '$ID' from name '$NAME'"
 rm .input
