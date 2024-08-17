@@ -1,0 +1,1 @@
+jq '.experiments[] | {id: .id, name: .tags.name} | select(.name == "exp-1") | .id' < example.json

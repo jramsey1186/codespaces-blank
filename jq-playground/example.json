@@ -1,0 +1,18 @@
+{
+    "experiments": [
+        {
+            "id": "ascde",
+            "tags": {
+                "key": "value",
+                "name": "exp-1"
+            }
+        },
+        {
+            "id": "abcdef",
+            "tags": {
+                "key": "new value",
+                "name": "exp-2"
+            }
+        }
+    ]
+}
