@@ -1,7 +1,7 @@
-NAME="exp-1"
+NAME="some template name"
 INPUT=.input
-cat example2.json > .input
-ID=$(name=$NAME jq -r '.experiments[] | select(.tags.name == env.name) | .id' $INPUT)
+cat example3.json > .input
+ID=$(name=$NAME jq -r '.experimentTemplates[] | select(.tags.Name == env.name) | .id' $INPUT)
 if [ -z $ID ]; 
     then 
     echo "No experiment id found for $NAME"

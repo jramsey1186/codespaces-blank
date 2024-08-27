@@ -1,0 +1,13 @@
+{
+    "experimentTemplates": [
+        {
+            "id": "EXT6NZNwVaghscToN",
+            "description": "Affect multiple resource types in a single AZ, targeting by tags and explicit ARNs, to approximate power interruption in one AZ.",
+            "creationTime": "2024-08-27T18:43:33.240000+00:00",
+            "lastUpdateTime": "2024-08-27T18:43:33.240000+00:00",
+            "tags": {
+                "Name": "some template name"
+            }
+        }
+    ]
+}
